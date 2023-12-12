@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  backend:
+    image: backend-img
+    build:
+      context: .
+      dockerfile: backend.dockerfile
+    restart: always
+    env_file:
+      - app/.env
+    ports:
+      - "8091:80"
+    volumes:
+      - ./app:/app/

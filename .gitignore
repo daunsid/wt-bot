@@ -1,0 +1,4 @@
+wvenv
+.env
+wvenvw
+*__pycache__
